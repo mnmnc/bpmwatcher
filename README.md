@@ -25,7 +25,4 @@ Lets say you have an application that is available to your clients all over the 
 
 But… at some point when number of Your applications increases and with those the number of BPMs and sustained transactions as well (transaction is a block of code within the script that contains particular actions – for example authentication process, or data submit to web page – and is shown separately on the server side), You will face imminent problem with tracking how much BPMs still work, how much have been shutdown accidentally (or intentionally) by your client or which transactions are missing data and when did they stop reporting. The job of reviewing all of the BPMs scattered across multiple transactions, and multiple applications, and multiple profiles (profile is a group of application or group of scripts) is a tedious and painfully boring. I had to review hundreds of transactions and hundreds of BPMs each month – trust me, there are better ways of spending half day at work. Daily routine kills the joy in you piece by piece.
 
-Once, I had enough. I’ve decided to automate this process.
-The purpose: to know when particular Business Process Monitor stopped responding and to know how long particular transaction/script hasn’t been executed or returned data.
-The weapon of choice: powershell + BSM OpenAPI.
-
+Therefore I've written this script.
