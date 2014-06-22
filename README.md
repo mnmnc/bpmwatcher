@@ -11,6 +11,7 @@ The weapon of choice:
 ### Variables
 
 * $strict - You can assign value 0 or 1. If it is set to 1 it forces the script to report the Business Process Monitor as faulty only when it stopped responding within all scripts/transactions that has been deployed to it. If it is set to 0, the script will report the Business Process Monitor as faulty even it if stopped executing only one of deployed scripts/transactions.
+* $url - Default value is : `$url = "https://BAC.URL/gdeopenapi/GdeOpenApi?method=getData&user=XXX&password=XXX&query=SELECT DISTINCT szTransactionName as transaction, MAX(time_stamp) as time FROM trans_t WHERE profile_name='" + $profile + "' and time_stamp>" + $weekAgo + " &resultType=csv&customerID=1"` Of course you need to supply address to your own instance of HP BAC and your credentials.
 
 
 ==========
