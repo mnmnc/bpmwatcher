@@ -1,7 +1,11 @@
 bpmwatcher
 ==========
 
-HP BPM (Business Process Monitor)  watcher is the powershell script that analyses the responses from BPMs to HP BSM / HP BAC and shows the inactivity of specific BPM.
+HP BPM (Business Process Monitor)  watcher is the powershell script that analyses the responses from BPMs to HP BSM / HP BAC and shows the inactivity of specific BPM. 
+The purpose: to know when particular Business Process Monitor stopped responding and to know how long particular transaction/script hasn’t been executed or returned data. 
+The weapon of choice: 
+* powershell 
+* BSM OpenAPI.
 
 ==========
 ### Variables
